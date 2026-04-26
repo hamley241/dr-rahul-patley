@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dr. Rahul Patley — Consultant Psychiatrist | NIMHANS | Hyderabad</title>
+<meta name="description" content="Dr. Rahul Patley — Consultant Psychiatrist. Assistant Professor, NIMHANS. Specialist in depression, anxiety, addiction psychiatry, and adult ADHD. Consulting at Sukoon Health, Hyderabad."/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css"/>
+<style>
+  /* Print-ready overrides */
+  @page { size: A4; margin: 12mm; }
+
+  @media print {
+    html, body { background: #fff !important; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+    /* Kill fixed/sticky chrome */
+    .nav { position: static !important; border-bottom: 1px solid #ddd !important; }
+    .fab, .tw-fab, .tweaks-panel, .tw-panel { display: none !important; }
+
+    /* Modals/backdrops never print */
+    .modal-backdrop, .archive-backdrop { display: none !important; }
+
+    /* Sections: avoid awkward mid-section breaks where possible */
+    section { padding: 28px 0 !important; break-inside: avoid-page; page-break-inside: avoid; }
+    .hero { padding-top: 20px !important; }
+
+    /* Encourage page breaks between major sections */
+    section + section { break-before: auto; }
+    #about, #services, #assessments, #breathe, #research, #book, #policy, #press, #testimonials, #faq, #contact {
+      break-before: page; page-break-before: always;
+    }
+
+    /* Keep headings attached to their content */
+    h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
+    .sec-head { break-after: avoid-page; page-break-after: avoid; }
+
+    /* No hover/transition artifacts */
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+
+    /* Cards/list items shouldn't split */
+    .pub, .archive-item, .faq-item, .service, .credential, .testimonial,
+    .stat, .policy-item, .press-item, .contact-card, .breath-wrap {
+      break-inside: avoid; page-break-inside: avoid;
+    }
+
+    /* Map iframe can't print usefully — swap to a note */
+    .map iframe { display: none !important; }
+    .map { aspect-ratio: auto !important; padding: 16px; text-align: center; }
+    .map::after {
+      content: 'Sukoon Psychiatry Centre — Banjara Hills, Hyderabad';
+      font-family: var(--ff-display); font-size: 14px; color: var(--ink-soft);
+    }
+
+    /* Ensure images don't overflow */
+    img { max-width: 100% !important; break-inside: avoid; }
+
+    /* Show full URL next to external links for reference */
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 9px; color: #888; word-break: break-all;
+    }
+    a[href^="#"]::after, a[href^="mailto:"]::after, a[href^="tel:"]::after { content: none; }
+
+    /* Footer compact */
+    .footer { padding: 20px 0 !important; }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "theme": "clinical",
+  "showAssessments": true,
+  "showBreathing": true,
+  "density": "compact"
+}/*EDITMODE-END*/;
+window.__TWEAKS = TWEAK_DEFAULTS;
+</script>
+
+<script type="text/babel" src="src/data.jsx"></script>
+<script type="text/babel" src="src/icons.jsx"></script>
+<script type="text/babel" src="src/components.jsx"></script>
+<script type="text/babel" src="src/assessments.jsx"></script>
+<script type="text/babel" src="src/breathing.jsx"></script>
+<script type="text/babel" src="src/publications-data.jsx"></script>
+<script type="text/babel" src="src/publications.jsx"></script>
+<script type="text/babel" src="src/sections.jsx"></script>
+<script type="text/babel" src="src/tweaks.jsx"></script>
+<script type="text/babel" src="src/app.jsx"></script>
+
+<script type="text/babel">
+  // Auto-print once everything is ready
+  (async () => {
+    // Wait for fonts
+    if (document.fonts && document.fonts.ready) {
+      try { await document.fonts.ready; } catch (e) {}
+    }
+    // Wait for React app to mount
+    const waitForApp = () => new Promise(res => {
+      const check = () => {
+        const app = document.getElementById('app');
+        if (app && app.children.length > 0) res();
+        else setTimeout(check, 100);
+      };
+      check();
+    });
+    await waitForApp();
+    // Extra settle time
+    await new Promise(r => setTimeout(r, 800));
+    window.print();
+  })();
+</script>
+</body>
+</html>
