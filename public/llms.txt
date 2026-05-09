@@ -19,6 +19,10 @@
 - Former Assistant Professor of Psychiatry — NIMHANS, Bengaluru
 - Psychiatrist — Monash Health, Melbourne, Australia
 
+## Identifiers
+- ORCID: 0000-0003-2700-7854 (https://orcid.org/0000-0003-2700-7854)
+- ResearchGate: https://www.researchgate.net/profile/Rahul-Patley
+
 ## Conditions treated
 - Depression and mood disorders (PHQ-9 screening available)
 - Anxiety disorders (GAD-7 screening available)

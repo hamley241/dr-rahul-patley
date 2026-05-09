@@ -79,6 +79,7 @@ export function Research() {
             Browse all {pubs.length} publications <I_Arrow/>
           </button>
           <a href="https://www.researchgate.net/profile/Rahul-Patley" target="_blank" rel="noopener" className="btn ghost">View on ResearchGate ↗</a>
+          <a href="https://orcid.org/0000-0003-2700-7854" target="_blank" rel="noopener" className="btn ghost">ORCID 0000-0003-2700-7854 ↗</a>
         </div>
       </div>
       {archiveOpen && <PublicationsArchive onClose={() => setArchiveOpen(false)}/>}
