@@ -1,0 +1,57 @@
+# Dr. Rahul Patley — Consultant Psychiatrist
+
+> Consultant psychiatrist practicing at Sukoon Health, Banjara Hills, Hyderabad. Former Assistant Professor of Psychiatry at NIMHANS, Bengaluru, with international clinical experience at Monash Health, Melbourne. Specializes in depression, anxiety, adult ADHD, OCD, addiction psychiatry and treatment-resistant schizophrenia. Contributor to national mental-health policy through Tele-MANAS, Ayushman Bharat HWC screening guidelines, and the National Action Plan on Climate & Mental Health. International advisory engagements with WHO-SEARO, USAID and JHPIEGO.
+
+## Practice
+- Location: Sukoon Health, Road No. 12, Banjara Hills, Hyderabad — 500034, India
+- Phone: +91 844 838 1810
+- WhatsApp: https://wa.me/918448381810
+- Email: drpatley@gmail.com
+- Hours: Monday–Saturday, 11:00 AM – 5:00 PM (closed Sunday)
+- Consultation modes: in-person and secure online video
+- Consultation length: 30 minutes
+- Booking: https://hamley241.github.io/dr-rahul-patley/#book
+
+## Credentials
+- MD (Psychiatry) — NIMHANS, Bengaluru
+- Post-Doctoral Fellowship in Community Psychiatry — NIMHANS
+- MBBS — Osmania Medical College, Hyderabad
+- Former Assistant Professor of Psychiatry — NIMHANS, Bengaluru
+- Psychiatrist — Monash Health, Melbourne, Australia
+
+## Conditions treated
+- Depression and mood disorders (PHQ-9 screening available)
+- Anxiety disorders (GAD-7 screening available)
+- Adult ADHD evaluation (ASRS-v1.1 screening available)
+- Obsessive-Compulsive Disorder and related disorders (BDD, trichotillomania)
+- Addiction psychiatry — alcohol, cannabis, opioids, gambling, gaming
+- Treatment-resistant schizophrenia — Clozapine management, long-acting injectables
+- Bipolar disorder
+- Sleep disorders
+- Telepsychiatry follow-ups
+
+## Self-assessment tools (private, browser-only)
+- ADHD screener (ASRS-v1.1)
+- Depression screener (PHQ-9)
+- Anxiety screener (GAD-7)
+- Guided breathing exercises (box, resonant, 4-7-8)
+
+## Policy and academic work
+- Tele-MANAS — clinical protocols and training modules for India's national 24×7 mental-health helpline
+- Ministry of Health, GoI — National Action Plan on Climate Change and Mental Health
+- Ayushman Bharat — mental-health screening guidelines for Health & Wellness Centres
+- WHO-SEARO, USAID, JHPIEGO — addiction and community psychiatry programmes
+
+## Publications
+- 41+ peer-reviewed publications across articles, books, chapters and conference papers
+- 2 books authored, 34 chapters in books and training manuals
+- Topics: community psychiatry, tele-mental health, primary care psychiatry, adult ADHD epidemiology, addiction psychiatry, climate and mental health
+- ResearchGate: https://www.researchgate.net/profile/Rahul-Patley
+
+## In the press
+- The Hindu, Times of India, Deccan Herald, Indian Express — interviews and commentary on adult ADHD, cannabis-use disorder, Tele-MANAS rollout, and mental-health policy
+
+## Site
+- Canonical URL: https://hamley241.github.io/dr-rahul-patley/
+- Last reviewed: 2026-05-09
+- Site built with React + Vite, hosted on GitHub Pages
