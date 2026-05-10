@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +16,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer": "^24.43.0",
+    "sirv": "^3.0.2",
     "vite": "^5.4.10"
   }
 }

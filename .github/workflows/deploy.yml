@@ -25,6 +25,14 @@ jobs:
           node-version: 20
           cache: npm
 
+      # Puppeteer downloads Chromium (~170 MB) during npm ci. Cache it so
+      # subsequent runs reuse the same browser instead of re-downloading.
+      - name: Cache Puppeteer browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - run: npm ci
 
       - name: Build
